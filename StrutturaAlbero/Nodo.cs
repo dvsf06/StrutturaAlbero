@@ -15,6 +15,11 @@ namespace StrutturaAlbero
         int idNodoPrecedente;
         List<Nodo> nodiSuccessivi;
 
+        public Nodo()
+        {
+            
+        }
+
         public Nodo(string Valore)
         {
             idNodo = nextId;

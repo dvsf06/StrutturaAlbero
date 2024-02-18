@@ -30,6 +30,19 @@ namespace StrutturaAlbero
             Visualizza();
         }
 
+        private void buttonSerialzza_Click(object sender, EventArgs e)
+        {
+            alb.Serializza();
+            listBox1.Items.Clear();
+            listBox1.Items.Add("Serialzzato");
+        }
+
+        private void buttonDeserializza_Click(object sender, EventArgs e)
+        {
+            alb = Albero.Deserializza();
+            Visualizza();
+        }
+
         public void Visualizza()
         {
             listBox1.Items.Clear();
@@ -48,7 +61,5 @@ namespace StrutturaAlbero
                 }
             }
         }
-
-        
     }
 }

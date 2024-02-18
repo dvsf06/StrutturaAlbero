@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace StrutturaAlbero
 {
@@ -89,6 +90,17 @@ namespace StrutturaAlbero
             {
                 return NodoPartenza;
             }
+        }
+
+        public void Serializza()
+        {
+            File.WriteAllText("../../../albero.json", JsonConvert.SerializeObject(this));
+        }
+
+        public static Albero Deserializza()
+        {
+            Albero x = JsonConvert.DeserializeObject<Albero>(File.ReadAllText("../../../albero.json"));
+            return x;
         }
 
         public Nodo Radice { get => radice; set => radice = value; }

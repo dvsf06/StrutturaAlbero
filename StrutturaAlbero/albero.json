@@ -1,0 +1,47 @@
+{
+  "Radice": {
+    "IdNodo": 0,
+    "Valore": "root",
+    "IdNodoPrecedente": 0,
+    "NodiSuccessivi": [
+      {
+        "IdNodo": 1,
+        "Valore": "1",
+        "IdNodoPrecedente": 0,
+        "NodiSuccessivi": [
+          {
+            "IdNodo": 3,
+            "Valore": "3",
+            "IdNodoPrecedente": 1,
+            "NodiSuccessivi": []
+          },
+          {
+            "IdNodo": 4,
+            "Valore": "4",
+            "IdNodoPrecedente": 1,
+            "NodiSuccessivi": []
+          }
+        ]
+      },
+      {
+        "IdNodo": 2,
+        "Valore": "2",
+        "IdNodoPrecedente": 0,
+        "NodiSuccessivi": [
+          {
+            "IdNodo": 5,
+            "Valore": "5",
+            "IdNodoPrecedente": 2,
+            "NodiSuccessivi": []
+          },
+          {
+            "IdNodo": 6,
+            "Valore": "6",
+            "IdNodoPrecedente": 2,
+            "NodiSuccessivi": []
+          }
+        ]
+      }
+    ]
+  }
+}

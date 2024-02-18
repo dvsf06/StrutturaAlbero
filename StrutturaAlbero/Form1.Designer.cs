@@ -34,6 +34,8 @@
             listBox1 = new ListBox();
             buttonRimuovi = new Button();
             textBoxIdDaRimuovere = new TextBox();
+            buttonSerialzza = new Button();
+            buttonDeserializza = new Button();
             SuspendLayout();
             // 
             // buttonAggiungi
@@ -66,7 +68,7 @@
             listBox1.ItemHeight = 15;
             listBox1.Location = new Point(126, 12);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(189, 184);
+            listBox1.Size = new Size(189, 199);
             listBox1.TabIndex = 3;
             // 
             // buttonRimuovi
@@ -86,11 +88,34 @@
             textBoxIdDaRimuovere.Size = new Size(108, 23);
             textBoxIdDaRimuovere.TabIndex = 5;
             // 
+            // buttonSerialzza
+            // 
+            buttonSerialzza.Location = new Point(12, 157);
+            buttonSerialzza.Name = "buttonSerialzza";
+            buttonSerialzza.Size = new Size(108, 23);
+            buttonSerialzza.TabIndex = 6;
+            buttonSerialzza.Text = "Serializza";
+            buttonSerialzza.UseVisualStyleBackColor = true;
+            buttonSerialzza.Click += buttonSerialzza_Click;
+            // 
+            // buttonDeserializza
+            // 
+            buttonDeserializza.Location = new Point(12, 186);
+            buttonDeserializza.Name = "buttonDeserializza";
+            buttonDeserializza.Size = new Size(108, 23);
+            buttonDeserializza.TabIndex = 7;
+            buttonDeserializza.Text = "Deserializza";
+            buttonDeserializza.UseVisualStyleBackColor = true;
+            buttonDeserializza.Click += buttonDeserializza_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = SystemColors.ScrollBar;
+            ClientSize = new Size(321, 218);
+            Controls.Add(buttonDeserializza);
+            Controls.Add(buttonSerialzza);
             Controls.Add(textBoxIdDaRimuovere);
             Controls.Add(buttonRimuovi);
             Controls.Add(listBox1);
@@ -111,5 +136,7 @@
         private ListBox listBox1;
         private Button buttonRimuovi;
         private TextBox textBoxIdDaRimuovere;
+        private Button buttonSerialzza;
+        private Button buttonDeserializza;
     }
 }
